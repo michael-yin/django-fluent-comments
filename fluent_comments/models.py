@@ -43,8 +43,8 @@ class FluentComment(BaseModel):
     class Meta:
         verbose_name = _("Comment")
         verbose_name_plural = _("Comments")
-        proxy = True
-        managed = False
+        # proxy = True
+        # managed = False
 
 
 @receiver(signals.comment_was_posted)
